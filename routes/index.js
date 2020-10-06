@@ -18,12 +18,8 @@ router.get("/", (req, res, next) => {
 });
 
 router.post("/", (req, res) => {
-  const { tag1 } = req.body;
-  const { tag2 } = req.body;
-  const { tag3 } = req.body;
-  const { tag4 } = req.body;
-  const { tag5 } = req.body;
-  const template = renderTemplate(tag1, tag2, tag3, tag4, tag5);
+  const { tag1, tag2, tag3, tag4, tag5, featured } = req.body;
+  const template = renderTemplate(featured, [tag1, tag2, tag3, tag4, tag5]);
   res.render("index", { title, tag1, tag2, tag3, tag4, tag5, template });
 });
 

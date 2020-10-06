@@ -17,64 +17,68 @@
       <%= title %>
     </h1>
     <div class="container mt-4">
-      <form action="/" method="POST">
-        <div class="form-group">
-          <label for="tag1">Tag 1</label>
-          <input
-            name="tag1"
-            type="text"
-            class="form-control"
-            value="<%= tag1 %>"
-          />
-        </div>
-        <div class="form-group">
-          <label for="tag2">Tag 2</label>
-          <input
-            name="tag2"
-            type="text"
-            class="form-control"
-            value="<%= tag2 %>"
-          />
-        </div>
-        <div class="form-group">
-          <label for="tag3">Tag 3</label>
-          <input
-            name="tag3"
-            type="text"
-            class="form-control"
-            value="<%= tag3 %>"
-          />
-        </div>
-        <div class="form-group">
-          <label for="tag4">Tag 4</label>
-          <input
-            name="tag4"
-            type="text"
-            class="form-control"
-            value="<%= tag4 %>"
-          />
-        </div>
-        <div class="form-group">
-          <label for="tag5">Tag 5</label>
-          <input
-            name="tag5"
-            type="text"
-            class="form-control"
-            value="<%= tag5 %>"
-          />
-        </div>
-        <div class="form-group form-check">
-          <input type="checkbox" class="form-check-input" name="featured" />
-          <label class="form-check-label" for="featured"
-            >Include Featured</label
-          >
-        </div>
-        <button class="btn btn-primary" type="submit">Submit</button>
-      </form>
+      <div class="alert alert-light">
+        <form action="/" method="POST">
+          <div class="form-group">
+            <label for="tag1">Tag 1</label>
+            <input
+              name="tag1"
+              type="text"
+              class="form-control"
+              value="<%= tag1 %>"
+            />
+          </div>
+          <div class="form-group">
+            <label for="tag2">Tag 2</label>
+            <input
+              name="tag2"
+              type="text"
+              class="form-control"
+              value="<%= tag2 %>"
+            />
+          </div>
+          <div class="form-group">
+            <label for="tag3">Tag 3</label>
+            <input
+              name="tag3"
+              type="text"
+              class="form-control"
+              value="<%= tag3 %>"
+            />
+          </div>
+          <div class="form-group">
+            <label for="tag4">Tag 4</label>
+            <input
+              name="tag4"
+              type="text"
+              class="form-control"
+              value="<%= tag4 %>"
+            />
+          </div>
+          <div class="form-group">
+            <label for="tag5">Tag 5</label>
+            <input
+              name="tag5"
+              type="text"
+              class="form-control"
+              value="<%= tag5 %>"
+            />
+          </div>
+          <div class="form-group form-check">
+            <input type="checkbox" class="form-check-input" name="featured" />
+            <label class="form-check-label" for="featured"
+              >Include Featured</label
+            >
+          </div>
+          <button class="btn btn-primary" type="submit">Submit</button>
+        </form>
+      </div>
     </div>
     <div class="container mt-4">
       <%if (template) { %>
-      <pre><%= template %></pre>
+      <div class="alert alert-info">
+        <pre><%= template %></pre>
+      </div>
       <% } %>
     </div>
   </body>
